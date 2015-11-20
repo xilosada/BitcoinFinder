@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC8F92681BFF243600CBBDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */; };
+		DC8F926A1BFF243600CBBDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F92691BFF243600CBBDA2 /* ViewController.swift */; };
+		DC8F926D1BFF243600CBBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8F926B1BFF243600CBBDA2 /* Main.storyboard */; };
+		DC8F92701BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC8F926E1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld */; };
+		DC8F92721BFF243600CBBDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8F92711BFF243600CBBDA2 /* Assets.xcassets */; };
+		DC8F92751BFF243600CBBDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */; };
+		DC8F92801BFF243600CBBDA2 /* BitcoinFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */; };
+		DC8F928B1BFF243600CBBDA2 /* BitcoinFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F928A1BFF243600CBBDA2 /* BitcoinFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC8F927C1BFF243600CBBDA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8F925C1BFF243600CBBDA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC8F92631BFF243600CBBDA2;
+			remoteInfo = BitcoinFinder;
+		};
+		DC8F92871BFF243600CBBDA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8F925C1BFF243600CBBDA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC8F92631BFF243600CBBDA2;
+			remoteInfo = BitcoinFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC8F92641BFF243600CBBDA2 /* BitcoinFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC8F92691BFF243600CBBDA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC8F926C1BFF243600CBBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC8F926F1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitcoinFinder.xcdatamodel; sourceTree = "<group>"; };
+		DC8F92711BFF243600CBBDA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC8F92741BFF243600CBBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC8F92761BFF243600CBBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8F927B1BFF243600CBBDA2 /* BitcoinFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinFinderTests.swift; sourceTree = "<group>"; };
+		DC8F92811BFF243600CBBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8F92861BFF243600CBBDA2 /* BitcoinFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8F928A1BFF243600CBBDA2 /* BitcoinFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinFinderUITests.swift; sourceTree = "<group>"; };
+		DC8F928C1BFF243600CBBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC8F92611BFF243600CBBDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8F92781BFF243600CBBDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8F92831BFF243600CBBDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8F925B1BFF243600CBBDA2 = {
+			isa = PBXGroup;
+			children = (
+				DC8F92661BFF243600CBBDA2 /* BitcoinFinder */,
+				DC8F927E1BFF243600CBBDA2 /* BitcoinFinderTests */,
+				DC8F92891BFF243600CBBDA2 /* BitcoinFinderUITests */,
+				DC8F92651BFF243600CBBDA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC8F92651BFF243600CBBDA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F92641BFF243600CBBDA2 /* BitcoinFinder.app */,
+				DC8F927B1BFF243600CBBDA2 /* BitcoinFinderTests.xctest */,
+				DC8F92861BFF243600CBBDA2 /* BitcoinFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8F92661BFF243600CBBDA2 /* BitcoinFinder */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */,
+				DC8F92691BFF243600CBBDA2 /* ViewController.swift */,
+				DC8F926B1BFF243600CBBDA2 /* Main.storyboard */,
+				DC8F92711BFF243600CBBDA2 /* Assets.xcassets */,
+				DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */,
+				DC8F92761BFF243600CBBDA2 /* Info.plist */,
+				DC8F926E1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld */,
+			);
+			path = BitcoinFinder;
+			sourceTree = "<group>";
+		};
+		DC8F927E1BFF243600CBBDA2 /* BitcoinFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */,
+				DC8F92811BFF243600CBBDA2 /* Info.plist */,
+			);
+			path = BitcoinFinderTests;
+			sourceTree = "<group>";
+		};
+		DC8F92891BFF243600CBBDA2 /* BitcoinFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F928A1BFF243600CBBDA2 /* BitcoinFinderUITests.swift */,
+				DC8F928C1BFF243600CBBDA2 /* Info.plist */,
+			);
+			path = BitcoinFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC8F92631BFF243600CBBDA2 /* BitcoinFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8F928F1BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinder" */;
+			buildPhases = (
+				DC8F92601BFF243600CBBDA2 /* Sources */,
+				DC8F92611BFF243600CBBDA2 /* Frameworks */,
+				DC8F92621BFF243600CBBDA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinFinder;
+			productName = BitcoinFinder;
+			productReference = DC8F92641BFF243600CBBDA2 /* BitcoinFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC8F927A1BFF243600CBBDA2 /* BitcoinFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8F92921BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinderTests" */;
+			buildPhases = (
+				DC8F92771BFF243600CBBDA2 /* Sources */,
+				DC8F92781BFF243600CBBDA2 /* Frameworks */,
+				DC8F92791BFF243600CBBDA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC8F927D1BFF243600CBBDA2 /* PBXTargetDependency */,
+			);
+			name = BitcoinFinderTests;
+			productName = BitcoinFinderTests;
+			productReference = DC8F927B1BFF243600CBBDA2 /* BitcoinFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC8F92851BFF243600CBBDA2 /* BitcoinFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8F92951BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinderUITests" */;
+			buildPhases = (
+				DC8F92821BFF243600CBBDA2 /* Sources */,
+				DC8F92831BFF243600CBBDA2 /* Frameworks */,
+				DC8F92841BFF243600CBBDA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC8F92881BFF243600CBBDA2 /* PBXTargetDependency */,
+			);
+			name = BitcoinFinderUITests;
+			productName = BitcoinFinderUITests;
+			productReference = DC8F92861BFF243600CBBDA2 /* BitcoinFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC8F925C1BFF243600CBBDA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = xiLosada;
+				TargetAttributes = {
+					DC8F92631BFF243600CBBDA2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DC8F927A1BFF243600CBBDA2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DC8F92631BFF243600CBBDA2;
+					};
+					DC8F92851BFF243600CBBDA2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DC8F92631BFF243600CBBDA2;
+					};
+				};
+			};
+			buildConfigurationList = DC8F925F1BFF243600CBBDA2 /* Build configuration list for PBXProject "BitcoinFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC8F925B1BFF243600CBBDA2;
+			productRefGroup = DC8F92651BFF243600CBBDA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8F92631BFF243600CBBDA2 /* BitcoinFinder */,
+				DC8F927A1BFF243600CBBDA2 /* BitcoinFinderTests */,
+				DC8F92851BFF243600CBBDA2 /* BitcoinFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC8F92621BFF243600CBBDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8F92751BFF243600CBBDA2 /* LaunchScreen.storyboard in Resources */,
+				DC8F92721BFF243600CBBDA2 /* Assets.xcassets in Resources */,
+				DC8F926D1BFF243600CBBDA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8F92791BFF243600CBBDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8F92841BFF243600CBBDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC8F92601BFF243600CBBDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8F926A1BFF243600CBBDA2 /* ViewController.swift in Sources */,
+				DC8F92701BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld in Sources */,
+				DC8F92681BFF243600CBBDA2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8F92771BFF243600CBBDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8F92801BFF243600CBBDA2 /* BitcoinFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8F92821BFF243600CBBDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8F928B1BFF243600CBBDA2 /* BitcoinFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC8F927D1BFF243600CBBDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC8F92631BFF243600CBBDA2 /* BitcoinFinder */;
+			targetProxy = DC8F927C1BFF243600CBBDA2 /* PBXContainerItemProxy */;
+		};
+		DC8F92881BFF243600CBBDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC8F92631BFF243600CBBDA2 /* BitcoinFinder */;
+			targetProxy = DC8F92871BFF243600CBBDA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC8F926B1BFF243600CBBDA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8F926C1BFF243600CBBDA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8F92741BFF243600CBBDA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC8F928D1BFF243600CBBDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC8F928E1BFF243600CBBDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC8F92901BFF243600CBBDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BitcoinFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC8F92911BFF243600CBBDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BitcoinFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC8F92931BFF243600CBBDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinFinder.app/BitcoinFinder";
+			};
+			name = Debug;
+		};
+		DC8F92941BFF243600CBBDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinFinder.app/BitcoinFinder";
+			};
+			name = Release;
+		};
+		DC8F92961BFF243600CBBDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BitcoinFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BitcoinFinder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DC8F92971BFF243600CBBDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BitcoinFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BitcoinFinder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8F925F1BFF243600CBBDA2 /* Build configuration list for PBXProject "BitcoinFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8F928D1BFF243600CBBDA2 /* Debug */,
+				DC8F928E1BFF243600CBBDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC8F928F1BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8F92901BFF243600CBBDA2 /* Debug */,
+				DC8F92911BFF243600CBBDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC8F92921BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8F92931BFF243600CBBDA2 /* Debug */,
+				DC8F92941BFF243600CBBDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC8F92951BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8F92961BFF243600CBBDA2 /* Debug */,
+				DC8F92971BFF243600CBBDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC8F926E1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC8F926F1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodel */,
+			);
+			currentVersion = DC8F926F1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodel */;
+			path = BitcoinFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC8F925C1BFF243600CBBDA2 /* Project object */;
+}
