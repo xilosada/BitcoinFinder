@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode7
+xcode_workspace: BitcoinFinder.xcodeworkspace
+xcode_scheme: BitcoinFinder
+xcode_sdk: iphonesimulator8.4
