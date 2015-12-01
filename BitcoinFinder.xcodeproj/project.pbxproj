@@ -21,6 +21,7 @@
 		DC8F92751BFF243600CBBDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */; };
 		DC8F92801BFF243600CBBDA2 /* BitcoinFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */; };
 		DC8F928B1BFF243600CBBDA2 /* BitcoinFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F928A1BFF243600CBBDA2 /* BitcoinFinderUITests.swift */; };
+		DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DC8F92861BFF243600CBBDA2 /* BitcoinFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F928A1BFF243600CBBDA2 /* BitcoinFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinFinderUITests.swift; sourceTree = "<group>"; };
 		DC8F928C1BFF243600CBBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */,
 				DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +106,7 @@
 		C6D04FAFFEE38FEB445C9378 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */,
 				DC5351261BFF32AD008029CE /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -207,6 +211,7 @@
 			buildConfigurationList = DC8F928F1BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinder" */;
 			buildPhases = (
 				4F75B3583CDF5E88E85C729D /* Check Pods Manifest.lock */,
+				DCF9B0031C0DB812004E67A6 /* Generate License */,
 				DC8F92601BFF243600CBBDA2 /* Sources */,
 				DC8F92611BFF243600CBBDA2 /* Frameworks */,
 				DC8F92621BFF243600CBBDA2 /* Resources */,
@@ -244,7 +249,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC8F92951BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinderUITests" */;
 			buildPhases = (
-				DC1357FF1C0D80C7001C5B75 /* Generate License Script */,
 				DC8F92821BFF243600CBBDA2 /* Sources */,
 				DC8F92831BFF243600CBBDA2 /* Frameworks */,
 				DC8F92841BFF243600CBBDA2 /* Resources */,
@@ -376,14 +380,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC1357FF1C0D80C7001C5B75 /* Generate License Script */ = {
+		DCF9B0031C0DB812004E67A6 /* Generate License */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Generate License Script";
+			name = "Generate License";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
