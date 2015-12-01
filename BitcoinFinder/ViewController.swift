@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        LocalBitcoinAPI.sharedInstance.getAds(41.3833, longitude: 2.1833)
+        CoinDeskAPI.sharedInstance.getBPI()
     }
 
     override func didReceiveMemoryWarning() {

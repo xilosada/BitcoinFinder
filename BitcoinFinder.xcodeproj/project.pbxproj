@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		562385072FC7837DBBCC9532 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454F9826458F9DD8586AC16F /* Pods.framework */; };
+		DC1357FE1C0D7F08001C5B75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC1357FD1C0D7F08001C5B75 /* Settings.bundle */; };
+		DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */; };
+		DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4637BF1C0B8F870004E9D8 /* Ad.swift */; };
 		DC5351211BFF2880008029CE /* LocalBitcoinAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */; };
 		DC5351231BFF2981008029CE /* LocalBitcoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */; };
 		DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5351261BFF32AD008029CE /* MapKit.framework */; };
@@ -40,11 +42,12 @@
 
 /* Begin PBXFileReference section */
 		04457B616DFFC4007D074D1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		454F9826458F9DD8586AC16F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654E50BDA3FD0FA9A8F3B4EA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DC1357FD1C0D7F08001C5B75 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPI.swift; sourceTree = "<group>"; };
+		DC4637BF1C0B8F870004E9D8 /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalBitcoinAPITests.swift; sourceTree = "<group>"; };
 		DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalBitcoinAPI.swift; sourceTree = "<group>"; };
-		DC5351241BFF329C008029CE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		DC5351261BFF32AD008029CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC8F92641BFF243600CBBDA2 /* BitcoinFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */,
-				562385072FC7837DBBCC9532 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,16 +104,40 @@
 			isa = PBXGroup;
 			children = (
 				DC5351261BFF32AD008029CE /* MapKit.framework */,
-				DC5351241BFF329C008029CE /* Alamofire.framework */,
-				454F9826458F9DD8586AC16F /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC1421F81C0B8AC8002ABD01 /* CoinDesk */ = {
+			isa = PBXGroup;
+			children = (
+				DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */,
+			);
+			name = CoinDesk;
+			sourceTree = "<group>";
+		};
+		DC1421F91C0B8ADD002ABD01 /* LocalBitcoin */ = {
+			isa = PBXGroup;
+			children = (
+				DC4637BE1C0B8F6A0004E9D8 /* Entities */,
+				DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */,
+			);
+			name = LocalBitcoin;
+			sourceTree = "<group>";
+		};
+		DC4637BE1C0B8F6A0004E9D8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DC4637BF1C0B8F870004E9D8 /* Ad.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		DC53511F1BFF2624008029CE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */,
+				DC1421F91C0B8ADD002ABD01 /* LocalBitcoin */,
+				DC1421F81C0B8AC8002ABD01 /* CoinDesk */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -119,6 +145,7 @@
 		DC8F925B1BFF243600CBBDA2 = {
 			isa = PBXGroup;
 			children = (
+				DC1357FD1C0D7F08001C5B75 /* Settings.bundle */,
 				DC8F92661BFF243600CBBDA2 /* BitcoinFinder */,
 				DC8F927E1BFF243600CBBDA2 /* BitcoinFinderTests */,
 				DC8F92891BFF243600CBBDA2 /* BitcoinFinderUITests */,
@@ -217,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC8F92951BFF243600CBBDA2 /* Build configuration list for PBXNativeTarget "BitcoinFinderUITests" */;
 			buildPhases = (
+				DC1357FF1C0D80C7001C5B75 /* Generate License Script */,
 				DC8F92821BFF243600CBBDA2 /* Sources */,
 				DC8F92831BFF243600CBBDA2 /* Frameworks */,
 				DC8F92841BFF243600CBBDA2 /* Resources */,
@@ -279,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1357FE1C0D7F08001C5B75 /* Settings.bundle in Resources */,
 				DC8F92751BFF243600CBBDA2 /* LaunchScreen.storyboard in Resources */,
 				DC8F92721BFF243600CBBDA2 /* Assets.xcassets in Resources */,
 				DC8F926D1BFF243600CBBDA2 /* Main.storyboard in Resources */,
@@ -347,6 +376,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DC1357FF1C0D80C7001C5B75 /* Generate License Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate License Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python credits.py -s \"$SRCROOT\" -o \"$SRCROOT/Settings.bundle/Credits.plist\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -355,6 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8F926A1BFF243600CBBDA2 /* ViewController.swift in Sources */,
+				DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */,
+				DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */,
 				DC5351231BFF2981008029CE /* LocalBitcoinAPI.swift in Sources */,
 				DC8F92701BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld in Sources */,
 				DC8F92681BFF243600CBBDA2 /* AppDelegate.swift in Sources */,

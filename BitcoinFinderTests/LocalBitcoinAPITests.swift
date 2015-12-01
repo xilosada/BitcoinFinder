@@ -7,10 +7,16 @@
 //
 
 import XCTest
+import MapKit
+
 @testable import BitcoinFinder
 
 class LocalBitcoinAPITests: XCTestCase {
 
+    
+    let localbitcoinApi = LocalBitcoinAPI.sharedInstance
+    
+    let barcelonaLatLon = (41.3833, 2.1833)
     
     override func setUp() {
         super.setUp()
@@ -25,6 +31,7 @@ class LocalBitcoinAPITests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        localbitcoinApi.getAds(barcelonaLatLon.0, longitude: barcelonaLatLon.1)
     }
 
     func testPerformanceExample() {
