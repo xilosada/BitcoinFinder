@@ -38,16 +38,6 @@
                ReferencedContainer = "container:BitcoinFinder.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC8F92851BFF243600CBBDA2"
-               BuildableName = "BitcoinFinderUITests.xctest"
-               BlueprintName = "BitcoinFinderUITests"
-               ReferencedContainer = "container:BitcoinFinder.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
