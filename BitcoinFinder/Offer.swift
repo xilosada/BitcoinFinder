@@ -14,23 +14,29 @@
 //  limitations under the License.
 //
 
-import Foundation
 
-class Ad {
+import CoreData
+
+class Offer: NSManagedObject {
     
-    let lat: Double
-    let lon: Double
-    let price: Double?
-    
-    struct Keys {
-        static let Lat = "lat"
-        static let Lon = "lon"
-        static let Price = "temp_price"
+    enum Type {
+        static let CashBuy = 1
+        static let CashSell = 2
     }
     
-    init (dictionary: [String: AnyObject]){
-        lat = dictionary[Keys.Lat] as! Double
-        lon = dictionary[Keys.Lon] as! Double
-        price = Double(dictionary[Keys.Price] as! String)
+    @NSManaged var price: Double
+    @NSManaged var type: Int
+    
+    @NSManaged var place: Place
+    @NSManaged var trader: Trader
+    
+    init(price: Double, type: Int, context: NSManagedObjectContext) {
+        
+        let entity =  NSEntityDescription.entityForName("Offer", inManagedObjectContext: context)!
+        
+        super.init(entity: entity,insertIntoManagedObjectContext: context)
+        
+        self.price = price
+        self.type = type
     }
 }

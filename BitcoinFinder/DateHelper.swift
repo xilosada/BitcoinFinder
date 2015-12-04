@@ -1,5 +1,5 @@
 //
-//  Copyright 2015 (C) Xabier I. Losada  (http://www.xilosada.com)
+//  Copyright 2015 X.I. Losada.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -16,21 +16,21 @@
 
 import Foundation
 
-class Ad {
+struct DateHelper {
     
-    let lat: Double
-    let lon: Double
-    let price: Double?
-    
-    struct Keys {
-        static let Lat = "lat"
-        static let Lon = "lon"
-        static let Price = "temp_price"
+    static func fromISOString(dateString: String) -> NSDate {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZ"
+        return dateFormatter.dateFromString(dateString)!
     }
     
-    init (dictionary: [String: AnyObject]){
-        lat = dictionary[Keys.Lat] as! Double
-        lon = dictionary[Keys.Lon] as! Double
-        price = Double(dictionary[Keys.Price] as! String)
+    static func getISOString(date: NSDate, timeZone: NSTimeZone? = nil) -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "HH:mm:ss"
+        if let timeZone = timeZone {
+            dateFormatter.timeZone = timeZone
+        }
+        return dateFormatter.stringFromDate(date)
     }
-}
+
+}    

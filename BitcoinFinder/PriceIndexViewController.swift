@@ -1,5 +1,5 @@
 //
-//  Copyright 2015 (C) Xabier I. Losada  (http://www.xilosada.com)
+//  Copyright 2015 X.I. Losada.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -13,24 +13,16 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
+//
 
-import Foundation
+import UIKit
+import RxSwift
 
-class Ad {
+class PriceIndexViewController: UIViewController {
     
-    let lat: Double
-    let lon: Double
-    let price: Double?
     
-    struct Keys {
-        static let Lat = "lat"
-        static let Lon = "lon"
-        static let Price = "temp_price"
-    }
-    
-    init (dictionary: [String: AnyObject]){
-        lat = dictionary[Keys.Lat] as! Double
-        lon = dictionary[Keys.Lon] as! Double
-        price = Double(dictionary[Keys.Price] as! String)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
     }
 }

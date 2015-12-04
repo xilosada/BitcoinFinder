@@ -16,6 +16,7 @@
 
 import Foundation
 import Alamofire
+import RxSwift
 
 class LocalBitcoinAPI {
     
@@ -25,11 +26,11 @@ class LocalBitcoinAPI {
     
     private init () {}
     
-    func getAds(latitude: Double, longitude: Double) -> [Ad]{
+    func getAds(latitude: Double, longitude: Double, completionHandler: (ads: [Ad]? ,error: NSError?) -> ()) {
         var ads = [Ad]()
         Alamofire.request(.GET, url, parameters: ["lat": latitude, "lon" : longitude]).responseJSON(completionHandler: { response in
             if let error = response.result.error{
-                print(error)
+                completionHandler(ads:nil, error:error)
             }
             else if response.result.isSuccess {
                 let data = response.result.value!["data"]
@@ -41,8 +42,8 @@ class LocalBitcoinAPI {
                     ads.appendContentsOf(self.getAdsFromURL(buyURL))
                     ads.appendContentsOf(self.getAdsFromURL(sellURL))
                 }
-
-                
+                completionHandler(ads:ads,error:nil)
+        
                 /*
                     "buy_local_url" = "https://localbitcoins.com/buy-bitcoins-with-cash/45268/08020-es/.json";
                     lat = "41.38";
@@ -53,8 +54,8 @@ class LocalBitcoinAPI {
                     
                     
                     */
-            }})
-        return ads
+            }
+        })
     }
 
     func getAdsFromURL(url: NSURL) -> [Ad]{
@@ -72,5 +73,5 @@ class LocalBitcoinAPI {
         })
         return ads
     }
-
 }
+

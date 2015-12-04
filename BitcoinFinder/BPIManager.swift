@@ -1,5 +1,5 @@
 //
-//  Copyright 2015 (C) Xabier I. Losada  (http://www.xilosada.com)
+//  Copyright 2015 X.I. Losada.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -13,24 +13,23 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
+//
 
+import RxSwift
 import Foundation
 
-class Ad {
+class BPIManager {
     
-    let lat: Double
-    let lon: Double
-    let price: Double?
-    
-    struct Keys {
-        static let Lat = "lat"
-        static let Lon = "lon"
-        static let Price = "temp_price"
+    var coinDeskAPI: CoinDeskAPI!
+    let disposeBag = DisposeBag()
+
+    init () {
+        coinDeskAPI = CoinDeskAPI(dataScheduler: MainScheduler.sharedInstance, URLSession: NSURLSession.sharedSession())
     }
     
-    init (dictionary: [String: AnyObject]){
-        lat = dictionary[Keys.Lat] as! Double
-        lon = dictionary[Keys.Lon] as! Double
-        price = Double(dictionary[Keys.Price] as! String)
+    func fetchBPIUpdates() -> Observable<CoinDeskBPI> {
+        return timer(0, 30, MainScheduler.sharedInstance)
+            .flatMap({_ in return self.coinDeskAPI.getBPI()})
+            .distinctUntilChanged()
     }
 }

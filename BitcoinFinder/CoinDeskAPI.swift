@@ -15,27 +15,28 @@
 //
 
 import Foundation
-import Alamofire
+import RxCocoa
+import RxSwift
 
-class CoinDeskAPI {
+public class CoinDeskAPI {
     
-    let url = "https://api.coindesk.com/v1/bpi/currentprice/EUR.json"
+    let _url = NSURL(string: "https://api.coindesk.com/v1/bpi/currentprice/EUR.json")!
     
-    static let sharedInstance = CoinDeskAPI()
+    let dataScheduler: ImmediateSchedulerType!
+    let URLSession: NSURLSession!
     
-    private init () {}
+    public init(dataScheduler: ImmediateSchedulerType, URLSession: NSURLSession) {
+        self.dataScheduler = dataScheduler
+        self.URLSession = URLSession
+    }
     
     /**
         returns the most recent price index from CoinDesk
      */
-    func getBPI(){
-        Alamofire.request(.GET, url).responseJSON(completionHandler: { response in
-            if let error = response.result.error{
-                print(error)
-            } else {
-                let data = response.result.value!["bpi"]!!["EUR"]!!["rate_float"]
-                print(data)
-            }
-        })
+    func getBPI() -> Observable<CoinDeskBPI> {
+        return self.URLSession.rx_JSON(_url)
+            .map { json in
+                return CoinDeskBPI(fromJson: json as! [String : AnyObject])
+            }.observeOn(self.dataScheduler)
     }
 }

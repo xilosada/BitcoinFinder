@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AE6BAFF2221F86848C7AB2D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05312F8BCEE9C0BD218D0EF2 /* Pods.framework */; };
 		DC1357FE1C0D7F08001C5B75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC1357FD1C0D7F08001C5B75 /* Settings.bundle */; };
 		DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */; };
 		DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4637BF1C0B8F870004E9D8 /* Ad.swift */; };
@@ -14,12 +15,24 @@
 		DC5351231BFF2981008029CE /* LocalBitcoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */; };
 		DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5351261BFF32AD008029CE /* MapKit.framework */; };
 		DC8F92681BFF243600CBBDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */; };
-		DC8F926A1BFF243600CBBDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F92691BFF243600CBBDA2 /* ViewController.swift */; };
 		DC8F926D1BFF243600CBBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8F926B1BFF243600CBBDA2 /* Main.storyboard */; };
 		DC8F92701BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC8F926E1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld */; };
 		DC8F92721BFF243600CBBDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8F92711BFF243600CBBDA2 /* Assets.xcassets */; };
 		DC8F92751BFF243600CBBDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */; };
-		DC8F92801BFF243600CBBDA2 /* BitcoinFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */; };
+		DCD052D91C0E058D00FA7735 /* Trader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052D81C0E058D00FA7735 /* Trader.swift */; };
+		DCD052DC1C0E067000FA7735 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052DB1C0E067000FA7735 /* CoreDataStackManager.swift */; };
+		DCD052DF1C0ED9F300FA7735 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052DE1C0ED9F300FA7735 /* Place.swift */; };
+		DCD052E11C0EDA4900FA7735 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052E01C0EDA4900FA7735 /* Offer.swift */; };
+		DCD052E41C0F145100FA7735 /* CoinDeskAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */; };
+		DCD052E61C0F183C00FA7735 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD052E51C0F183C00FA7735 /* RxSwift.framework */; };
+		DCD052EA1C0F185700FA7735 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD052E81C0F185700FA7735 /* RxSwift.framework */; };
+		DCD052EC1C0F630D00FA7735 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */; };
+		DCD052EF1C0F6C1D00FA7735 /* PriceIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */; };
+		DCD052F11C106AB700FA7735 /* BPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F01C106AB700FA7735 /* BPIManager.swift */; };
+		DCD052F81C107C7200FA7735 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F71C107C7200FA7735 /* DateHelper.swift */; };
+		DCD052FB1C107D3900FA7735 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */; };
+		DCD052FD1C109AF400FA7735 /* CoinDeskBPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052FC1C109AF400FA7735 /* CoinDeskBPITests.swift */; };
+		DCD052FF1C10A18800FA7735 /* CoinDeskBPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */; };
 		DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		04457B616DFFC4007D074D1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		05312F8BCEE9C0BD218D0EF2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654E50BDA3FD0FA9A8F3B4EA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DC1357FD1C0D7F08001C5B75 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPI.swift; sourceTree = "<group>"; };
@@ -44,15 +58,28 @@
 		DC5351261BFF32AD008029CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC8F92641BFF243600CBBDA2 /* BitcoinFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC8F92691BFF243600CBBDA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC8F926C1BFF243600CBBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC8F926F1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitcoinFinder.xcdatamodel; sourceTree = "<group>"; };
 		DC8F92711BFF243600CBBDA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC8F92741BFF243600CBBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC8F92761BFF243600CBBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8F927B1BFF243600CBBDA2 /* BitcoinFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinFinderTests.swift; sourceTree = "<group>"; };
 		DC8F92811BFF243600CBBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD052D81C0E058D00FA7735 /* Trader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trader.swift; sourceTree = "<group>"; };
+		DCD052DB1C0E067000FA7735 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		DCD052DE1C0ED9F300FA7735 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DCD052E01C0EDA4900FA7735 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPITests.swift; sourceTree = "<group>"; };
+		DCD052E51C0F183C00FA7735 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Release-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
+		DCD052E71C0F185700FA7735 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
+		DCD052E81C0F185700FA7735 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Release-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
+		DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
+		DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIndexViewController.swift; sourceTree = "<group>"; };
+		DCD052F01C106AB700FA7735 /* BPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPIManager.swift; sourceTree = "<group>"; };
+		DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinDeskBPI.swift; path = BitcoinFinderTests/CoinDeskBPI.swift; sourceTree = SOURCE_ROOT; };
+		DCD052F71C107C7200FA7735 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
+		DCD052FC1C109AF400FA7735 /* CoinDeskBPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskBPITests.swift; sourceTree = "<group>"; };
 		DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,8 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */,
+				DCD052EC1C0F630D00FA7735 /* RxCocoa.framework in Frameworks */,
 				DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */,
+				6AE6BAFF2221F86848C7AB2D /* Pods.framework in Frameworks */,
+				DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */,
+				DCD052EA1C0F185700FA7735 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD052E61C0F183C00FA7735 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +119,13 @@
 		C6D04FAFFEE38FEB445C9378 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */,
+				DCD052E71C0F185700FA7735 /* RxCocoa.framework */,
+				DCD052E81C0F185700FA7735 /* RxSwift.framework */,
+				DCD052E51C0F183C00FA7735 /* RxSwift.framework */,
 				DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */,
 				DC5351261BFF32AD008029CE /* MapKit.framework */,
+				05312F8BCEE9C0BD218D0EF2 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,6 +133,7 @@
 		DC1421F81C0B8AC8002ABD01 /* CoinDesk */ = {
 			isa = PBXGroup;
 			children = (
+				DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */,
 				DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */,
 			);
 			name = CoinDesk;
@@ -105,25 +142,21 @@
 		DC1421F91C0B8ADD002ABD01 /* LocalBitcoin */ = {
 			isa = PBXGroup;
 			children = (
-				DC4637BE1C0B8F6A0004E9D8 /* Entities */,
+				DC4637BF1C0B8F870004E9D8 /* Ad.swift */,
 				DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */,
 			);
 			name = LocalBitcoin;
 			sourceTree = "<group>";
 		};
-		DC4637BE1C0B8F6A0004E9D8 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				DC4637BF1C0B8F870004E9D8 /* Ad.swift */,
-			);
-			name = Entities;
-			sourceTree = "<group>";
-		};
 		DC53511F1BFF2624008029CE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DC1421F91C0B8ADD002ABD01 /* LocalBitcoin */,
-				DC1421F81C0B8AC8002ABD01 /* CoinDesk */,
+				DCD052E21C0EDB5300FA7735 /* Cloud */,
+				DCD052DA1C0E065700FA7735 /* Persistance */,
+				DCD052D81C0E058D00FA7735 /* Trader.swift */,
+				DCD052DE1C0ED9F300FA7735 /* Place.swift */,
+				DCD052E01C0EDA4900FA7735 /* Offer.swift */,
+				DCD052F01C106AB700FA7735 /* BPIManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -152,14 +185,13 @@
 		DC8F92661BFF243600CBBDA2 /* BitcoinFinder */ = {
 			isa = PBXGroup;
 			children = (
+				DCD052F61C107C5A00FA7735 /* Helpers */,
+				DCD052ED1C0F6BF700FA7735 /* Controllers */,
 				DC53511F1BFF2624008029CE /* Models */,
 				DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */,
-				DC8F92691BFF243600CBBDA2 /* ViewController.swift */,
-				DC8F926B1BFF243600CBBDA2 /* Main.storyboard */,
+				DCD052DD1C0ED88600FA7735 /* Storyboards */,
 				DC8F92711BFF243600CBBDA2 /* Assets.xcassets */,
-				DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */,
 				DC8F92761BFF243600CBBDA2 /* Info.plist */,
-				DC8F926E1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld */,
 			);
 			path = BitcoinFinder;
 			sourceTree = "<group>";
@@ -167,11 +199,80 @@
 		DC8F927E1BFF243600CBBDA2 /* BitcoinFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC8F927F1BFF243600CBBDA2 /* BitcoinFinderTests.swift */,
+				DCD052F91C107D0800FA7735 /* Helpers */,
 				DC8F92811BFF243600CBBDA2 /* Info.plist */,
-				DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */,
+				DCD052F21C10756500FA7735 /* LocalBitcoinTests */,
+				DCD052F31C10757500FA7735 /* CoinDeskTests */,
 			);
 			path = BitcoinFinderTests;
+			sourceTree = "<group>";
+		};
+		DCD052DA1C0E065700FA7735 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F926E1BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld */,
+				DCD052DB1C0E067000FA7735 /* CoreDataStackManager.swift */,
+			);
+			name = Persistance;
+			sourceTree = "<group>";
+		};
+		DCD052DD1C0ED88600FA7735 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F926B1BFF243600CBBDA2 /* Main.storyboard */,
+				DC8F92731BFF243600CBBDA2 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DCD052E21C0EDB5300FA7735 /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				DC1421F81C0B8AC8002ABD01 /* CoinDesk */,
+				DC1421F91C0B8ADD002ABD01 /* LocalBitcoin */,
+			);
+			name = Cloud;
+			sourceTree = "<group>";
+		};
+		DCD052ED1C0F6BF700FA7735 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DCD052F21C10756500FA7735 /* LocalBitcoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */,
+			);
+			name = LocalBitcoinTests;
+			sourceTree = "<group>";
+		};
+		DCD052F31C10757500FA7735 /* CoinDeskTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */,
+				DCD052FC1C109AF400FA7735 /* CoinDeskBPITests.swift */,
+			);
+			name = CoinDeskTests;
+			sourceTree = "<group>";
+		};
+		DCD052F61C107C5A00FA7735 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCD052F71C107C7200FA7735 /* DateHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DCD052F91C107D0800FA7735 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,12 +443,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8F926A1BFF243600CBBDA2 /* ViewController.swift in Sources */,
+				DCD052FF1C10A18800FA7735 /* CoinDeskBPI.swift in Sources */,
+				DCD052D91C0E058D00FA7735 /* Trader.swift in Sources */,
 				DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */,
 				DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */,
+				DCD052F11C106AB700FA7735 /* BPIManager.swift in Sources */,
+				DCD052DF1C0ED9F300FA7735 /* Place.swift in Sources */,
 				DC5351231BFF2981008029CE /* LocalBitcoinAPI.swift in Sources */,
+				DCD052EF1C0F6C1D00FA7735 /* PriceIndexViewController.swift in Sources */,
 				DC8F92701BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld in Sources */,
+				DCD052E11C0EDA4900FA7735 /* Offer.swift in Sources */,
+				DCD052F81C107C7200FA7735 /* DateHelper.swift in Sources */,
 				DC8F92681BFF243600CBBDA2 /* AppDelegate.swift in Sources */,
+				DCD052DC1C0E067000FA7735 /* CoreDataStackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8F92801BFF243600CBBDA2 /* BitcoinFinderTests.swift in Sources */,
+				DCD052FD1C109AF400FA7735 /* CoinDeskBPITests.swift in Sources */,
+				DCD052FB1C107D3900FA7735 /* DateHelperTests.swift in Sources */,
+				DCD052E41C0F145100FA7735 /* CoinDeskAPITests.swift in Sources */,
 				DC5351211BFF2880008029CE /* LocalBitcoinAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +518,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -452,6 +563,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -479,6 +591,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
 				INFOPLIST_FILE = BitcoinFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -495,6 +608,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
 				INFOPLIST_FILE = BitcoinFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -507,6 +621,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
@@ -519,6 +637,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
