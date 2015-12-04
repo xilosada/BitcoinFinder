@@ -55,7 +55,7 @@
 		DC4637BF1C0B8F870004E9D8 /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalBitcoinAPITests.swift; sourceTree = "<group>"; };
 		DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalBitcoinAPI.swift; sourceTree = "<group>"; };
-		DC5351261BFF32AD008029CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DC5351261BFF32AD008029CE /* MapKit.framework */ = {isa = PBXFileReference; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC8F92641BFF243600CBBDA2 /* BitcoinFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F92671BFF243600CBBDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8F926C1BFF243600CBBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
