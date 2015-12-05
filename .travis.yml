@@ -29,8 +29,8 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - xcodebuild -workspace "BitcoinFinder.xcworkspace" -scheme "BitcoinFinder" -sdk "iphonesimulator9.1" -destination "OS=9.1,name=iPhone 4S" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c 
-  - pod lib lint
+  - xcodebuild -verbose -workspace "BitcoinFinder.xcworkspace" -scheme "BitcoinFinder" -sdk "iphonesimulator9.1" -destination "OS=9.1,name=iPhone 4S" -configuration Debug ONLY_ACTIVE_ARCH=NO build test | xcpretty -c 
+  #- pod lib lint
 
   # Build Framework in Debug and Run Tests if specified
   #- if [ $RUN_TESTS == "YES" ]; then
