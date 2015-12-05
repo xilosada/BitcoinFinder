@@ -7,18 +7,21 @@ env:
   - LANG=en_US.UTF-8
   - WORKSPACE=BitcoinFinder.xcworkspace
   - IOS_FRAMEWORK_SCHEME="BitcoinFinder"
+  - SDK="iphonesimulator9.1"
+
 
   matrix:
-    - DESTINATION="OS=8.1,name=iPhone 4S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="iphonesimulator8.1"     RUN_TESTS="YES" POD_LINT="YES"
-    - DESTINATION="OS=8.2,name=iPhone 5"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="iphonesimulator8.2"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=8.3,name=iPhone 5S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="iphonesimulator8.3"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=8.4,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="iphonesimulator8.4"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.0,name=iPhone 6 Plus"      SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="iphonesimulator9.0"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.1,name=iPhone 6S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="iphonesimulator9.1"     RUN_TESTS="YES" POD_LINT="NO"
+    - DESTINATION="OS=9.1,name=iPhone 4S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$SDK"
+    - DESTINATION="OS=9.1,name=iPhone 5"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$SDK"
+    - DESTINATION="OS=9.1,name=iPhone 5S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$SDK"
+    - DESTINATION="OS=9.1,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$SDK"
+    - DESTINATION="OS=9.1,name=iPhone 6 Plus"      SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$SDK"
+    - DESTINATION="OS=9.1,name=iPhone 6S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$SDK"
 
 before_install:
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - pip install codecov
 
 cache:
   - bundler
@@ -29,3 +32,6 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
   - xcodebuild build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO | xcpretty -c
+
+after_success:
+  - codecov
