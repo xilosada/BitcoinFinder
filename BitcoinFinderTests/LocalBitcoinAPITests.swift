@@ -15,7 +15,6 @@
 //
 
 import XCTest
-import MapKit
 
 @testable import BitcoinFinder
 
