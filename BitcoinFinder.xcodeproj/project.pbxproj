@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EDF725E173351EF2665F84C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05312F8BCEE9C0BD218D0EF2 /* Pods.framework */; };
+		9A35225D89C674C53160AD83 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5320DA46563919C3788A56 /* Pods.framework */; };
 		DC1357FE1C0D7F08001C5B75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC1357FD1C0D7F08001C5B75 /* Settings.bundle */; };
 		DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */; };
 		DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4637BF1C0B8F870004E9D8 /* Ad.swift */; };
@@ -43,12 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05312F8BCEE9C0BD218D0EF2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1016018B95D1C9ED60A05DBB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B34082A904E89CFA5473BB84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB5320DA46563919C3788A56 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1357FD1C0D7F08001C5B75 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPI.swift; sourceTree = "<group>"; };
-		DC3D11111C1253F800BA7656 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		DC4637BF1C0B8F870004E9D8 /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalBitcoinAPITests.swift; sourceTree = "<group>"; };
 		DC5351221BFF2981008029CE /* LocalBitcoinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalBitcoinAPI.swift; sourceTree = "<group>"; };
@@ -67,17 +66,12 @@
 		DCD052DE1C0ED9F300FA7735 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DCD052E01C0EDA4900FA7735 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPITests.swift; sourceTree = "<group>"; };
-		DCD052E51C0F183C00FA7735 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Release-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
-		DCD052E71C0F185700FA7735 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
-		DCD052E81C0F185700FA7735 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Release-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
-		DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
 		DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIndexViewController.swift; sourceTree = "<group>"; };
 		DCD052F01C106AB700FA7735 /* BPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPIManager.swift; sourceTree = "<group>"; };
 		DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinDeskBPI.swift; path = BitcoinFinderTests/CoinDeskBPI.swift; sourceTree = SOURCE_ROOT; };
 		DCD052F71C107C7200FA7735 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
 		DCD052FC1C109AF400FA7735 /* CoinDeskBPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskBPITests.swift; sourceTree = "<group>"; };
-		DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */,
-				3EDF725E173351EF2665F84C /* Pods.framework in Frameworks */,
+				9A35225D89C674C53160AD83 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,14 +106,8 @@
 		C6D04FAFFEE38FEB445C9378 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC3D11111C1253F800BA7656 /* Pods.framework */,
-				DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */,
-				DCD052E71C0F185700FA7735 /* RxCocoa.framework */,
-				DCD052E81C0F185700FA7735 /* RxSwift.framework */,
-				DCD052E51C0F183C00FA7735 /* RxSwift.framework */,
-				DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */,
 				DC5351261BFF32AD008029CE /* MapKit.framework */,
-				05312F8BCEE9C0BD218D0EF2 /* Pods.framework */,
+				CB5320DA46563919C3788A56 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -562,6 +550,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -587,6 +576,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = BitcoinFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinder;
@@ -604,6 +594,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = BitcoinFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinder;
@@ -620,6 +611,7 @@
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
@@ -637,6 +629,7 @@
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;

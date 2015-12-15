@@ -8,6 +8,7 @@ env:
   - WORKSPACE=BitcoinFinder.xcworkspace
   - IOS_FRAMEWORK_SCHEME="BitcoinFinder"
   - SDK="iphonesimulator9.1"
+  - CODE_COVERAGE=YES
 
 
   matrix:
@@ -21,9 +22,6 @@ env:
 before_install:
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-  - brew install python
-  - pip install -U pip
-  - pip install codecov
 
 cache:
   - bundler
@@ -33,7 +31,7 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - xcodebuild build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  - xcodebuild -verbose build test  -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -enableCodeCoverage $CODE_COVERAGE -GCC_GENERATE_TEST_COVERAGE_FILES=YES -configuration Debug ONLY_ACTIVE_ARCH=NO
 
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
