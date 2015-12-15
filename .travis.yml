@@ -31,11 +31,7 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-<<<<<<< HEAD
   - xcodebuild -verbose build test  -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -enableCodeCoverage $CODE_COVERAGE -GCC_GENERATE_TEST_COVERAGE_FILES=YES -configuration Debug ONLY_ACTIVE_ARCH=NO
-=======
-  - xcodebuild build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -enableCodeCoverage $CODE_COVERAGE -GCC_GENERATE_TEST_COVERAGE_FILES=YES -configuration Debug ONLY_ACTIVE_ARCH=NO | xcpretty -c
->>>>>>> c170718a4cd56be333bf1b34debf24326f5d187c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
