@@ -11,7 +11,7 @@ cache:
 
 script:
   - open -b com.apple.iphonesimulator
-  - xcodebuild test -workspace BitcoinFinder.xcworkspace -scheme BitcoinFinderTests -destination 'platform=iOS Simulator,OS=9.2,name=iPhone 6s' -sdk iphonesimulator -enableCodeCoverage YES | xcpretty -c > build.log && exit ${PIPESTATUS[0]}
+  - xcodebuild test -workspace BitcoinFinder.xcworkspace -scheme BitcoinFinderTests -destination 'platform=iOS Simulator,OS=9.2,name=iPhone 6s' -sdk iphonesimulator -enableCodeCoverage YES | xcpretty -c > build.log
 
 after_failure:
   - tail -n 500 build.log
