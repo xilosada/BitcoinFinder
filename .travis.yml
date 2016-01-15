@@ -10,8 +10,8 @@ cache:
   - cocoapods
 
 script:
-  - xcodebuild -workspace BitcoinFinder.xcworkspace -scheme 'BitcoinFinderTests' -sdk iphonesimulator clean build | xcpretty -c > build.log
-  - xcodebuild -workspace BitcoinFinder.xcworkspace -scheme 'BitcoinFinderTests' -sdk iphonesimulator -enableCodeCoverage YES test | xcpretty -c > build.log && exit ${PIPESTATUS[0]}
+  - open -b com.apple.iphonesimulator
+  - xcodebuild -workspace BitcoinFinder.xcworkspace -scheme 'BitcoinFinderTests' -sdk iphonesimulator -enableCodeCoverage YES build test | xcpretty -c > build.log && exit ${PIPESTATUS[0]}
 
 after_failure:
   - tail -n 500 build.log
