@@ -10,6 +10,6 @@ cache:
   - cocoapods
 
 script:
-  - xcodebuild test -workspace BitcoinFinder.xcworkspace -scheme BitcoinFinderTests -destination 'platform=iOS Simulator,OS=9.2,name=iPhone 6s' -sdk iphonesimulator -enableCodeCoverage YES
+  - xcodebuild test -verbose -workspace BitcoinFinder.xcworkspace -scheme BitcoinFinderTests -destination 'platform=iOS Simulator,OS=9.2,name=iPhone 6s' -sdk iphonesimulator -enableCodeCoverage YES
 after_success:
   - bash <(curl -s https://codecov.io/bash)
