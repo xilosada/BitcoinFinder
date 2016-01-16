@@ -21,16 +21,28 @@ class Ad {
     let lat: Double
     let lon: Double
     let price: Double?
+    let username: String
+    let feedBackRate: Int
+    let traderLevel: String
     
     struct Keys {
-        static let lat = "lat"
-        static let lon = "lon"
-        static let  price = "temp_price"
+        static let Lat = "lat"
+        static let Lon = "lon"
+        static let Price = "temp_price"
+        static let Username = "username"
+        static let FeedBackRate = "feedback_score"
+        static let TraderLevel = "trade_count"
     }
     
     init (dictionary: [String: AnyObject]){
-        lat = dictionary[Keys.lat] as! Double
-        lon = dictionary[Keys.lon] as! Double
-        price = Double(dictionary[Keys.price] as! String)
+        lat = dictionary[Keys.Lat] as! Double
+        lon = dictionary[Keys.Lon] as! Double
+        price = Double(dictionary[Keys.Price] as! String)
+        username = dictionary[Keys.Username] as! String
+        feedBackRate = dictionary[Keys.FeedBackRate] as! Int
+        traderLevel = dictionary[Keys.TraderLevel] as! String
+        
+        
     }
 }
+

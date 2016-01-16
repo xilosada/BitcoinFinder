@@ -15,7 +15,6 @@
 //
 
 import XCTest
-import MapKit
 
 @testable import BitcoinFinder
 
@@ -36,16 +35,20 @@ class LocalBitcoinAPITests: XCTestCase {
         super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        localbitcoinApi.getAds(barcelonaLatLon.0, longitude: barcelonaLatLon.1)
+    func testGetAdsFromLocation() {
+        localbitcoinApi.getOfferInfofromLatitude(barcelonaLatLon.0, longitude: barcelonaLatLon.1, completionHandler: {
+            result, error in
+            XCTAssertNil(error)
+            XCTAssertNotNil(result)
+            XCTAssert(result?.count>0)
+        })
     }
-
+ 
     func testPerformanceExample() {
-        // This is an example of a performance test case.
+
         self.measureBlock {
             // Put the code you want to measure the time of here.
+
         }
     }
 

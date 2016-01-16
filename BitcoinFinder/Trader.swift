@@ -14,21 +14,25 @@
 //  limitations under the License.
 //
 
-import UIKit
 
-class ViewController: UIViewController {
+import CoreData
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        LocalBitcoinAPI.sharedInstance.getAds(41.3833, longitude: 2.1833)
-        CoinDeskAPI.sharedInstance.getBPI()
+class Trader: NSManagedObject {
+    
+    @NSManaged var username: String
+    @NSManaged var feedbackRate: Int
+    @NSManaged var traderLevel: String
+    
+    @NSManaged var offers: [Offer]
+    
+    init(username: String, feedbackRate: Int, traderLevel: String, context: NSManagedObjectContext) {
+        
+        let entity =  NSEntityDescription.entityForName("Trader", inManagedObjectContext: context)!
+        
+        super.init(entity: entity,insertIntoManagedObjectContext: context)
+        
+        self.username = username
+        self.feedbackRate = feedbackRate
+        self.traderLevel = traderLevel
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
