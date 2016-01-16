@@ -13,13 +13,9 @@ public struct OfferInfo {
     
     let price: Double
     let type: Int
-    let place: Place
-    let trader: Trader
     
     init(price: Double, type: Int, place: Place, trader: Trader) {
         self.price = price
         self.type = type
-        self.place = place
-        self.trader = trader
     }
 }
