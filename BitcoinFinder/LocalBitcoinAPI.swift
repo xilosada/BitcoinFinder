@@ -66,8 +66,8 @@ class LocalBitcoinAPI {
             _ = data!["ad_count"]
             let adArray = data!["ad_list"] as! [AnyObject]
             adArray.forEach( { ad in
-                print(ad["data"]!!["ad_id"] )
                 let obj = Ad(dictionary: ad["data"] as! [String: AnyObject])
+                print(obj.username)
                 ads.append(obj)
             })
         })

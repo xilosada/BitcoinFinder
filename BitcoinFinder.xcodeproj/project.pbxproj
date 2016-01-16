@@ -24,7 +24,6 @@
 		DCD052DF1C0ED9F300FA7735 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052DE1C0ED9F300FA7735 /* Place.swift */; };
 		DCD052E11C0EDA4900FA7735 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052E01C0EDA4900FA7735 /* Offer.swift */; };
 		DCD052E41C0F145100FA7735 /* CoinDeskAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */; };
-		DCD052EF1C0F6C1D00FA7735 /* PriceIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */; };
 		DCD052F11C106AB700FA7735 /* BPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F01C106AB700FA7735 /* BPIManager.swift */; };
 		DCD052F81C107C7200FA7735 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F71C107C7200FA7735 /* DateHelper.swift */; };
 		DCD052FB1C107D3900FA7735 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */; };
@@ -36,6 +35,7 @@
 		DCD424341C4A536800FF56E3 /* OfferInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424331C4A536800FF56E3 /* OfferInfo.swift */; };
 		DCD424361C4A543000FF56E3 /* OfferType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424351C4A543000FF56E3 /* OfferType.swift */; };
 		DCD424391C4A8BEE00FF56E3 /* OfferListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424381C4A8BEE00FF56E3 /* OfferListViewController.swift */; };
+		DCD4243B1C4AA6E500FF56E3 /* AdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4243A1C4AA6E500FF56E3 /* AdTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,6 @@
 		DCD052DE1C0ED9F300FA7735 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DCD052E01C0EDA4900FA7735 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPITests.swift; sourceTree = "<group>"; };
-		DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIndexViewController.swift; sourceTree = "<group>"; };
 		DCD052F01C106AB700FA7735 /* BPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPIManager.swift; sourceTree = "<group>"; };
 		DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinDeskBPI.swift; path = BitcoinFinderTests/CoinDeskBPI.swift; sourceTree = SOURCE_ROOT; };
 		DCD052F71C107C7200FA7735 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		DCD424331C4A536800FF56E3 /* OfferInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferInfo.swift; sourceTree = "<group>"; };
 		DCD424351C4A543000FF56E3 /* OfferType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferType.swift; sourceTree = "<group>"; };
 		DCD424381C4A8BEE00FF56E3 /* OfferListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListViewController.swift; sourceTree = "<group>"; };
+		DCD4243A1C4AA6E500FF56E3 /* AdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +232,6 @@
 		DCD052ED1C0F6BF700FA7735 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */,
 				DCD424381C4A8BEE00FF56E3 /* OfferListViewController.swift */,
 			);
 			name = Controllers;
@@ -242,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5351201BFF2880008029CE /* LocalBitcoinAPITests.swift */,
+				DCD4243A1C4AA6E500FF56E3 /* AdTests.swift */,
 			);
 			name = LocalBitcoinTests;
 			sourceTree = "<group>";
@@ -467,7 +467,6 @@
 				DCD052F11C106AB700FA7735 /* BPIManager.swift in Sources */,
 				DCD052DF1C0ED9F300FA7735 /* Place.swift in Sources */,
 				DC5351231BFF2981008029CE /* LocalBitcoinAPI.swift in Sources */,
-				DCD052EF1C0F6C1D00FA7735 /* PriceIndexViewController.swift in Sources */,
 				DCD424301C4A526D00FF56E3 /* OfferListDataProviderProtocol.swift in Sources */,
 				DCD424321C4A530100FF56E3 /* OfferListDataProvider.swift in Sources */,
 				DCD424391C4A8BEE00FF56E3 /* OfferListViewController.swift in Sources */,
@@ -484,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD4243B1C4AA6E500FF56E3 /* AdTests.swift in Sources */,
 				DCD052FD1C109AF400FA7735 /* CoinDeskBPITests.swift in Sources */,
 				DCD052FB1C107D3900FA7735 /* DateHelperTests.swift in Sources */,
 				DCD052E41C0F145100FA7735 /* CoinDeskAPITests.swift in Sources */,

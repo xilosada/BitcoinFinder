@@ -29,6 +29,7 @@ class Ad {
         static let Lat = "lat"
         static let Lon = "lon"
         static let Price = "temp_price"
+        static let Profile = "profile"
         static let Username = "username"
         static let FeedBackRate = "feedback_score"
         static let TraderLevel = "trade_count"
@@ -38,11 +39,10 @@ class Ad {
         lat = dictionary[Keys.Lat] as! Double
         lon = dictionary[Keys.Lon] as! Double
         price = Double(dictionary[Keys.Price] as! String)
-        username = dictionary[Keys.Username] as! String
-        feedBackRate = dictionary[Keys.FeedBackRate] as! Int
-        traderLevel = dictionary[Keys.TraderLevel] as! String
-        
-        
+        username = dictionary[Keys.Profile]![Keys.Username] as! String
+        feedBackRate = dictionary[Keys.Profile]![Keys.FeedBackRate] as! Int
+        traderLevel = dictionary[Keys.Profile]![Keys.TraderLevel] as! String
     }
+    
 }
 
