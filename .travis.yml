@@ -6,15 +6,11 @@ before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 cache:
-  - bundler
-  - cocoapods
+  bundler: true
+  cocoapods: true
 
 script:
-  - open -b com.apple.iphonesimulator
-  - xcodebuild test -workspace BitcoinFinder.xcworkspace -scheme BitcoinFinderTests -destination 'platform=iOS Simulator,OS=9.2,name=iPhone 6s' -sdk iphonesimulator -enableCodeCoverage YES | xcpretty -c > build.log
-
-after_failure:
-  - tail -n 500 build.log
+  - xcodebuild test -workspace BitcoinFinder.xcworkspace -scheme BitcoinFinderTests -destination 'platform=iOS Simulator,OS=9.2,name=iPhone 6s' -sdk iphonesimulator -enableCodeCoverage YES | xcpretty -c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
