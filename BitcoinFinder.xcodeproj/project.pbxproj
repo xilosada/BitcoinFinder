@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AE6BAFF2221F86848C7AB2D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05312F8BCEE9C0BD218D0EF2 /* Pods.framework */; };
+		110743C99325BABE956CAD1C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD739F80ECA06D8DCC9B8C83 /* Pods.framework */; };
 		DC1357FE1C0D7F08001C5B75 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC1357FD1C0D7F08001C5B75 /* Settings.bundle */; };
 		DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */; };
 		DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4637BF1C0B8F870004E9D8 /* Ad.swift */; };
@@ -24,16 +24,18 @@
 		DCD052DF1C0ED9F300FA7735 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052DE1C0ED9F300FA7735 /* Place.swift */; };
 		DCD052E11C0EDA4900FA7735 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052E01C0EDA4900FA7735 /* Offer.swift */; };
 		DCD052E41C0F145100FA7735 /* CoinDeskAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */; };
-		DCD052E61C0F183C00FA7735 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD052E51C0F183C00FA7735 /* RxSwift.framework */; };
-		DCD052EA1C0F185700FA7735 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD052E81C0F185700FA7735 /* RxSwift.framework */; };
-		DCD052EC1C0F630D00FA7735 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */; };
 		DCD052EF1C0F6C1D00FA7735 /* PriceIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */; };
 		DCD052F11C106AB700FA7735 /* BPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F01C106AB700FA7735 /* BPIManager.swift */; };
 		DCD052F81C107C7200FA7735 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F71C107C7200FA7735 /* DateHelper.swift */; };
 		DCD052FB1C107D3900FA7735 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */; };
 		DCD052FD1C109AF400FA7735 /* CoinDeskBPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052FC1C109AF400FA7735 /* CoinDeskBPITests.swift */; };
 		DCD052FF1C10A18800FA7735 /* CoinDeskBPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */; };
-		DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */; };
+		DCD4242E1C4A508600FF56E3 /* OfferListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4242D1C4A508600FF56E3 /* OfferListViewControllerTests.swift */; };
+		DCD424301C4A526D00FF56E3 /* OfferListDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4242F1C4A526D00FF56E3 /* OfferListDataProviderProtocol.swift */; };
+		DCD424321C4A530100FF56E3 /* OfferListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424311C4A530100FF56E3 /* OfferListDataProvider.swift */; };
+		DCD424341C4A536800FF56E3 /* OfferInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424331C4A536800FF56E3 /* OfferInfo.swift */; };
+		DCD424361C4A543000FF56E3 /* OfferType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424351C4A543000FF56E3 /* OfferType.swift */; };
+		DCD424391C4A8BEE00FF56E3 /* OfferListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD424381C4A8BEE00FF56E3 /* OfferListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04457B616DFFC4007D074D1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		05312F8BCEE9C0BD218D0EF2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		654E50BDA3FD0FA9A8F3B4EA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		0EECE7F408DD4DBF3C6756C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2A9D65BF955D5DA4134FAE58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CD739F80ECA06D8DCC9B8C83 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1357FD1C0D7F08001C5B75 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		DC1421F61C0B86D7002ABD01 /* CoinDeskAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPI.swift; sourceTree = "<group>"; };
 		DC4637BF1C0B8F870004E9D8 /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
@@ -70,17 +72,18 @@
 		DCD052DE1C0ED9F300FA7735 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DCD052E01C0EDA4900FA7735 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		DCD052E31C0F145100FA7735 /* CoinDeskAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskAPITests.swift; sourceTree = "<group>"; };
-		DCD052E51C0F183C00FA7735 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Release-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
-		DCD052E71C0F185700FA7735 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
-		DCD052E81C0F185700FA7735 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Release-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
-		DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Pods/../build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
 		DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceIndexViewController.swift; sourceTree = "<group>"; };
 		DCD052F01C106AB700FA7735 /* BPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPIManager.swift; sourceTree = "<group>"; };
 		DCD052F41C1075A600FA7735 /* CoinDeskBPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinDeskBPI.swift; path = BitcoinFinderTests/CoinDeskBPI.swift; sourceTree = SOURCE_ROOT; };
 		DCD052F71C107C7200FA7735 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
 		DCD052FC1C109AF400FA7735 /* CoinDeskBPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDeskBPITests.swift; sourceTree = "<group>"; };
-		DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		DCD4242D1C4A508600FF56E3 /* OfferListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListViewControllerTests.swift; sourceTree = "<group>"; };
+		DCD4242F1C4A526D00FF56E3 /* OfferListDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListDataProviderProtocol.swift; sourceTree = "<group>"; };
+		DCD424311C4A530100FF56E3 /* OfferListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListDataProvider.swift; sourceTree = "<group>"; };
+		DCD424331C4A536800FF56E3 /* OfferInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferInfo.swift; sourceTree = "<group>"; };
+		DCD424351C4A543000FF56E3 /* OfferType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferType.swift; sourceTree = "<group>"; };
+		DCD424381C4A8BEE00FF56E3 /* OfferListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD052EC1C0F630D00FA7735 /* RxCocoa.framework in Frameworks */,
 				DC5351271BFF32AD008029CE /* MapKit.framework in Frameworks */,
-				6AE6BAFF2221F86848C7AB2D /* Pods.framework in Frameworks */,
-				DCF9B0011C0DB4C5004E67A6 /* Alamofire.framework in Frameworks */,
-				DCD052EA1C0F185700FA7735 /* RxSwift.framework in Frameworks */,
+				110743C99325BABE956CAD1C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,18 +100,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD052E61C0F183C00FA7735 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		885E1C64B063B0A4BACF32A2 /* Pods */ = {
+		2A1A331AA86408EFFC94474C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				654E50BDA3FD0FA9A8F3B4EA /* Pods.debug.xcconfig */,
-				04457B616DFFC4007D074D1A /* Pods.release.xcconfig */,
+				0EECE7F408DD4DBF3C6756C5 /* Pods.debug.xcconfig */,
+				2A9D65BF955D5DA4134FAE58 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -119,13 +118,8 @@
 		C6D04FAFFEE38FEB445C9378 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCD052EB1C0F630D00FA7735 /* RxCocoa.framework */,
-				DCD052E71C0F185700FA7735 /* RxCocoa.framework */,
-				DCD052E81C0F185700FA7735 /* RxSwift.framework */,
-				DCD052E51C0F183C00FA7735 /* RxSwift.framework */,
-				DCF9B0001C0DB4C5004E67A6 /* Alamofire.framework */,
 				DC5351261BFF32AD008029CE /* MapKit.framework */,
-				05312F8BCEE9C0BD218D0EF2 /* Pods.framework */,
+				CD739F80ECA06D8DCC9B8C83 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,7 +149,7 @@
 				DCD052DA1C0E065700FA7735 /* Persistance */,
 				DCD052D81C0E058D00FA7735 /* Trader.swift */,
 				DCD052DE1C0ED9F300FA7735 /* Place.swift */,
-				DCD052E01C0EDA4900FA7735 /* Offer.swift */,
+				DCD424371C4A593B00FF56E3 /* Offer */,
 				DCD052F01C106AB700FA7735 /* BPIManager.swift */,
 			);
 			name = Models;
@@ -168,8 +162,8 @@
 				DC8F92661BFF243600CBBDA2 /* BitcoinFinder */,
 				DC8F927E1BFF243600CBBDA2 /* BitcoinFinderTests */,
 				DC8F92651BFF243600CBBDA2 /* Products */,
-				885E1C64B063B0A4BACF32A2 /* Pods */,
 				C6D04FAFFEE38FEB445C9378 /* Frameworks */,
+				2A1A331AA86408EFFC94474C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,6 +193,7 @@
 		DC8F927E1BFF243600CBBDA2 /* BitcoinFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				DCD4242C1C4A500A00FF56E3 /* Controllers */,
 				DCD052F91C107D0800FA7735 /* Helpers */,
 				DC8F92811BFF243600CBBDA2 /* Info.plist */,
 				DCD052F21C10756500FA7735 /* LocalBitcoinTests */,
@@ -238,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD052EE1C0F6C1D00FA7735 /* PriceIndexViewController.swift */,
+				DCD424381C4A8BEE00FF56E3 /* OfferListViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +269,26 @@
 				DCD052FA1C107D3900FA7735 /* DateHelperTests.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DCD4242C1C4A500A00FF56E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCD4242D1C4A508600FF56E3 /* OfferListViewControllerTests.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DCD424371C4A593B00FF56E3 /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				DCD052E01C0EDA4900FA7735 /* Offer.swift */,
+				DCD424351C4A543000FF56E3 /* OfferType.swift */,
+				DCD424331C4A536800FF56E3 /* OfferInfo.swift */,
+				DCD4242F1C4A526D00FF56E3 /* OfferListDataProviderProtocol.swift */,
+				DCD424311C4A530100FF56E3 /* OfferListDataProvider.swift */,
+			);
+			name = Offer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,10 +463,15 @@
 				DCD052D91C0E058D00FA7735 /* Trader.swift in Sources */,
 				DC1421F71C0B86D7002ABD01 /* CoinDeskAPI.swift in Sources */,
 				DC4637C01C0B8F870004E9D8 /* Ad.swift in Sources */,
+				DCD424361C4A543000FF56E3 /* OfferType.swift in Sources */,
 				DCD052F11C106AB700FA7735 /* BPIManager.swift in Sources */,
 				DCD052DF1C0ED9F300FA7735 /* Place.swift in Sources */,
 				DC5351231BFF2981008029CE /* LocalBitcoinAPI.swift in Sources */,
 				DCD052EF1C0F6C1D00FA7735 /* PriceIndexViewController.swift in Sources */,
+				DCD424301C4A526D00FF56E3 /* OfferListDataProviderProtocol.swift in Sources */,
+				DCD424321C4A530100FF56E3 /* OfferListDataProvider.swift in Sources */,
+				DCD424391C4A8BEE00FF56E3 /* OfferListViewController.swift in Sources */,
+				DCD424341C4A536800FF56E3 /* OfferInfo.swift in Sources */,
 				DC8F92701BFF243600CBBDA2 /* BitcoinFinder.xcdatamodeld in Sources */,
 				DCD052E11C0EDA4900FA7735 /* Offer.swift in Sources */,
 				DCD052F81C107C7200FA7735 /* DateHelper.swift in Sources */,
@@ -466,6 +487,7 @@
 				DCD052FD1C109AF400FA7735 /* CoinDeskBPITests.swift in Sources */,
 				DCD052FB1C107D3900FA7735 /* DateHelperTests.swift in Sources */,
 				DCD052E41C0F145100FA7735 /* CoinDeskAPITests.swift in Sources */,
+				DCD4242E1C4A508600FF56E3 /* OfferListViewControllerTests.swift in Sources */,
 				DC5351211BFF2880008029CE /* LocalBitcoinAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -568,6 +590,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -576,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -585,7 +608,7 @@
 		};
 		DC8F92901BFF243600CBBDA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 654E50BDA3FD0FA9A8F3B4EA /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0EECE7F408DD4DBF3C6756C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -593,6 +616,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = BitcoinFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinder;
@@ -602,7 +626,7 @@
 		};
 		DC8F92911BFF243600CBBDA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04457B616DFFC4007D074D1A /* Pods.release.xcconfig */;
+			baseConfigurationReference = 2A9D65BF955D5DA4134FAE58 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -610,6 +634,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = BitcoinFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinder;
@@ -624,7 +649,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
@@ -640,7 +667,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				INFOPLIST_FILE = BitcoinFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.BitcoinFinderTests;
