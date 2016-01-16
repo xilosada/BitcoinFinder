@@ -26,7 +26,7 @@ class LocalBitcoinAPI {
     
     private init () {}
     
-    func getAds(latitude: Double, longitude: Double, completionHandler: (ads: [Ad]? ,error: NSError?) -> ()) {
+    func getOfferInfofromLatitude(latitude: Double, longitude: Double, completionHandler: (ads: [Ad]? ,error: NSError?) -> ()) {
         var ads = [Ad]()
         Alamofire.request(.GET, url, parameters: ["lat": latitude, "lon" : longitude]).responseJSON(completionHandler: { response in
             if let error = response.result.error{
@@ -73,5 +73,6 @@ class LocalBitcoinAPI {
         })
         return ads
     }
+    
 }
 

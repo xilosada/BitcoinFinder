@@ -1,5 +1,5 @@
 //
-//  Copyright 2015 (C) Xabier I. Losada  (http://www.xilosada.com)
+//  Copyright 2016 X.I. Losada.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -13,25 +13,20 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
-
+//
 
 import CoreData
+import UIKit
+import RxSwift
 
-class Offer: NSManagedObject {
-    
-    @NSManaged var price: Double
-    @NSManaged var type: Int
-    
-    @NSManaged var place: Place
-    @NSManaged var trader: Trader
-    
-    init(price: Double, type: Int, context: NSManagedObjectContext) {
+public class OfferListViewController: UITableViewController, NSFetchedResultsControllerDelegate {
         
-        let entity =  NSEntityDescription.entityForName("Offer", inManagedObjectContext: context)!
+    public var dataProvider: OfferListDataProviderProtocol?
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
         
-        super.init(entity: entity,insertIntoManagedObjectContext: context)
-        
-        self.price = price
-        self.type = type
+        tableView.dataSource = dataProvider
+        dataProvider?.tableView = tableView
     }
 }

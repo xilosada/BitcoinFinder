@@ -36,7 +36,7 @@ class LocalBitcoinAPITests: XCTestCase {
     }
 
     func testGetAdsFromLocation() {
-        localbitcoinApi.getAds(barcelonaLatLon.0, longitude: barcelonaLatLon.1, completionHandler: {
+        localbitcoinApi.getOfferInfofromLatitude(barcelonaLatLon.0, longitude: barcelonaLatLon.1, completionHandler: {
             result, error in
             XCTAssertNil(error)
             XCTAssertNotNil(result)
