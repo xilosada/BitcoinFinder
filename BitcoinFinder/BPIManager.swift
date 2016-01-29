@@ -24,11 +24,11 @@ class BPIManager {
     let disposeBag = DisposeBag()
 
     init () {
-        coinDeskAPI = CoinDeskAPI(dataScheduler: MainScheduler.sharedInstance, URLSession: NSURLSession.sharedSession())
+        coinDeskAPI = CoinDeskAPI(dataScheduler: MainScheduler.instance, URLSession: NSURLSession.sharedSession())
     }
     
     func fetchBPIUpdates() -> Observable<CoinDeskBPI> {
-        return timer(0, 30, MainScheduler.sharedInstance)
+        return Observable<Int>.timer(0, period: 30, scheduler: MainScheduler.instance)
             .flatMap({_ in return self.coinDeskAPI.getBPI()})
             .distinctUntilChanged()
     }
