@@ -19,7 +19,7 @@ class CoinDeskAPITests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        coinDeskAPI = CoinDeskAPI(dataScheduler: MainScheduler.sharedInstance, URLSession: NSURLSession.sharedSession())
+        coinDeskAPI = CoinDeskAPI(dataScheduler: MainScheduler.instance, URLSession: NSURLSession.sharedSession())
     }
     
     override func tearDown() {
